@@ -9,13 +9,13 @@ spring:
   profiles: dev # 开发环境
   application:
     name: microservice-config-eureka
-    
+
 eureka:
   instance:
-    hostname: eureka6001.com 
+    hostname: eureka6001.com
   client:
-    registerWithEureka: false 
-    fetchRegistry: false 
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://eureka6001.com:6001/eureka/
   server:
@@ -27,16 +27,14 @@ spring:
   profiles: prod # 生产环境
   application:
     name: microservice-config-eureka
-
 eureka:
   instance:
-    hostname: eureka6001.com 
+    hostname: eureka6001.com
   client:
-    registerWithEureka: false 
-    fetchRegistry: false 
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://eureka6001.com:6001/eureka/
   server:
     enable-self-preservation: true # 开启自我保护机制*****************
-    
 #保存时注意，选择 UTF-8 保存
